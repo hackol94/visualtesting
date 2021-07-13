@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "localhost",
+    "path": "/",
+    "name": "tooltips",
+    "value": "3",
+    "expirationDate": 1798790400,
+    "hostOnly": false,
+    "httpOnly": false,
+    "secure": false,
+    "session": false,
+    "sameSite": "no_restriction"
+  },
+  {
+    "domain": "barto-virtual-3.s3-website-us-east-1.amazonaws.com",
+    "path": "/",
+    "name": "tooltips",
+    "value": "3",
+    "expirationDate": 1798790400,
+    "hostOnly": false,
+    "httpOnly": false,
+    "secure": false,
+    "session": false,
+    "sameSite": "no_restriction"
+  }
+]

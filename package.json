@@ -1,0 +1,32 @@
+{
+    "name": "visual_testing",
+    "version": "1.0.0",
+    "description": "Framework Visual Testing (Backstop and Cucumber)",
+    "main": "index.js",
+    "scripts": {
+        "test": "cucumber.js features/ -r steps/"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.21",
+        "@types/cucumber": "^7.0.0",
+        "chai": "^4.3.4",
+        "cucumber": "^3.2.1",
+        "cucumber-pretty": "^6.0.0",
+        "cucumber-promise": "^0.1.1",
+        "cucumber-tsflow": "^4.0.0-rc.1",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "backstopjs": "^5.3.4",
+        "es6-promise": "^4.2.2",
+        "https": "^1.0.0",
+        "node-fetch": "^2.6.1",
+        "promise": "^8.0.1",
+        "puppeteer-email": "^0.1.0",
+        "shelljs": "^0.7.8",
+        "test": "^0.6.0"
+    },
+    "author": "Brayan Orlando Martinez Rodriguez",
+    "license": "ISC"
+}
