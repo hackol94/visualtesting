@@ -42,17 +42,11 @@ defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
         }
     });
 
-
-
-
     When('I {string}', function(interactionI) {
         interaction = interactionI
     });
 
     Then('I check {string}', function(other, callback) {
-
-        console.log("Environment ---> ", argv);
-
         backstop(argv.backstop, testConfig.testConfig(application, tag, devices, interaction, 
         JSON.parse(openFile.read('environment/'+argv.envTest+'.json'))
         )).then(
@@ -64,7 +58,5 @@ defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
                 console.log(`Changes found.`);
             }
         );
-
     });
-
 });

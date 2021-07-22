@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../../backstop_data/bitmaps_reference/backstop_default_login_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20210722-145732/backstop_default_login_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20210722-160448/backstop_default_login_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_login_0_document_0_desktop.png",
         "label": "login",
@@ -28,7 +28,7 @@ report({
     {
       "pair": {
         "reference": "../../backstop_data/bitmaps_reference/backstop_default_login_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20210722-145732/backstop_default_login_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20210722-160448/backstop_default_login_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "backstop_default_login_0_document_0_desktop.png",
         "label": "login",
