@@ -12,11 +12,11 @@
         }
     ],
     "onBeforeScript": "chromy/onBefore.js",
-    "onReadyScript": "chromy/onReady.js",
+    "onReadyScript": "scenarios/shared/login.js",
     "scenarios": [{
-        "label": "BackstopJS Homepage",
+        "label": "login",
         "cookiePath": "backstop_data/engine_scripts/cookies.json",
-        "url": "http://localhost:8000/",
+        "url": "https://d1n8gq8jhttzm1.cloudfront.net/",
         "referenceUrl": "",
         "readyEvent": "",
         "readySelector": "",

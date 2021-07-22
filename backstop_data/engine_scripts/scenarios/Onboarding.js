@@ -8,7 +8,6 @@ module.exports = async (page, scenario, vp) => {
     
     await page.evaluate(scrollToSelector => {
         document.querySelectorAll(scrollToSelector).forEach(card=>{
-          console.log("sasa3:",card.innerText )
           if(card.innerText=="Fondo de Inversión"){
             card.scrollIntoView();
             card.click();

@@ -2,9 +2,10 @@ const defineSupportCode = require('cucumber').defineSupportCode;
 const assert = require('assert');
 const backstop = require('backstopjs');
 var testConfig = require('../src/main/config_backstop_module');
+const openFile = require('../src/main/util/OpenFile.js')
 
 defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
-    setDefaultTimeout(360 * 100);
+    setDefaultTimeout(500000);
     let application = "";
     let interaction = "";
     let tag = "";
@@ -45,8 +46,11 @@ defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
     });
 
     Then('I check {string}', function(other, callback) {
-
-        backstop('test', testConfig.testConfig(application, tag, devices, interaction)).then(
+        const scenario=   openFile.read('environment/stg.json')
+             scenario.then(data=>
+                console.log('value'+data)
+                )
+        backstop(process.env.backstop, testConfig.testConfig(application, tag, devices, interaction)).then(
             () => {
                 console.log(`No changes found.`);
                 callback();

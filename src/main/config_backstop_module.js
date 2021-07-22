@@ -17,7 +17,7 @@ module.exports.testConfig = function testConfig(application, tag, devices, inter
             onBeforeScript: "config/onBefore.js",
             onReadyScript: "scenarios/shared/login.js",
             scenarios: [{
-                label: "login",
+                label: "loginjhjhs",
                 cookiePath: "backstop_data/engine_scripts/config/cookies/cookies.json",
                 url: "https://d1n8gq8jhttzm1.cloudfront.net/",
                 onReadyScript: "",

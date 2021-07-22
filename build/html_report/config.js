@@ -3,28 +3,18 @@ report({
   "tests": [
     {
       "pair": {
-        "reference": "../../backstop_data/bitmaps_reference/backstop_default_login_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20210712-175531/backstop_default_login_0_document_0_desktop.png",
+        "reference": "../../backstop_data/bitmaps_reference/backstop_default_loginjhjhs_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20210722-141220/backstop_default_loginjhjhs_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "backstop_default_login_0_document_0_desktop.png",
-        "label": "login",
+        "fileName": "backstop_default_loginjhjhs_0_document_0_desktop.png",
+        "label": "loginjhjhs",
         "requireSameDimensions": true,
         "misMatchThreshold": 0.01,
         "url": "https://d1n8gq8jhttzm1.cloudfront.net/",
         "referenceUrl": "",
         "expect": 0,
         "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "rawMisMatchPercentage": 0.04689787701317716,
-          "misMatchPercentage": "0.05",
-          "analysisTime": 57
-        },
-        "diffImage": "../bitmaps_test/20210712-175531/failed_diff_backstop_default_login_0_document_0_desktop.png"
+        "error": "Reference file not found /Users/jeisson.barrera/Documents/Innovacion/cucumberbackstop/visualtesting/backstop_data/bitmaps_reference/backstop_default_loginjhjhs_0_document_0_desktop.png"
       },
       "status": "fail"
     }

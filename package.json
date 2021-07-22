@@ -4,7 +4,8 @@
     "description": "Framework Visual Testing (Backstop and Cucumber)",
     "main": "index.js",
     "scripts": {
-        "test": "cucumber.js features/ -r steps/"
+        "test": "backstop='test' ./node_modules/.bin/cucumber.js features/ -r steps/", 
+        "reference": "backstop='reference' ./node_modules/.bin/cucumber.js features/ -r steps/"
     },
     "devDependencies": {
         "@types/chai": "^4.2.21",
