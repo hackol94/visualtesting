@@ -1,7 +1,7 @@
 const backstop = require('backstopjs');
 
-module.exports.testConfig = function testConfig(application, tag, devices, interaction) {
-
+module.exports.testConfig = function testConfig(application, tag, devices, interaction, scenarios) {
+    console.log("Sceneriooooooo ----> ", scenarios);
     return {
         i: true,
         config: {
@@ -16,26 +16,7 @@ module.exports.testConfig = function testConfig(application, tag, devices, inter
             ],
             onBeforeScript: "config/onBefore.js",
             onReadyScript: "scenarios/shared/login.js",
-            scenarios: [{
-                label: "loginjhjhs",
-                cookiePath: "backstop_data/engine_scripts/config/cookies/cookies.json",
-                url: "https://d1n8gq8jhttzm1.cloudfront.net/",
-                onReadyScript: "",
-                referenceUrl: "",
-                readyEvent: "",
-                readySelector: "",
-                delay: 1000,
-                hideSelectors: [],
-                removeSelector: "",
-                hoverSelector: "div input[type='number']",
-                clickSelector: "",
-                postInteractionWait: 0,
-                selectors: [],
-                selectorExpansion: true,
-                expect: 0,
-                misMatchThreshold: 0.01,
-                requireSameDimensions: true
-            }],
+            scenarios: scenarios,
             paths: {
                 bitmaps_reference: "backstop_data/bitmaps_reference",
                 bitmaps_test: "build/bitmaps_test",

@@ -1,4 +1,4 @@
-{
+[{
     "label": "login",
     "cookiePath": "backstop_data/engine_scripts/cookies.json",
     "url": "https://d1n8gq8jhttzm1.cloudfront.net/",
@@ -21,4 +21,4 @@
     "selectorExpansion": true,
     "misMatchThreshold": 0.1,
     "requireSameDimensions": true
-}
+}]

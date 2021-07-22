@@ -3,6 +3,10 @@ const assert = require('assert');
 const backstop = require('backstopjs');
 var testConfig = require('../src/main/config_backstop_module');
 const openFile = require('../src/main/util/OpenFile.js')
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).argv
+
 
 defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
     setDefaultTimeout(500000);
@@ -46,11 +50,12 @@ defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
     });
 
     Then('I check {string}', function(other, callback) {
-        const scenario=   openFile.read('environment/stg.json')
-             scenario.then(data=>
-                console.log('value'+data)
-                )
-        backstop(process.env.backstop, testConfig.testConfig(application, tag, devices, interaction)).then(
+
+        console.log("Environment ---> ", argv);
+
+        backstop(argv.backstop, testConfig.testConfig(application, tag, devices, interaction, 
+        JSON.parse(openFile.read('environment/'+argv.envTest+'.json'))
+        )).then(
             () => {
                 console.log(`No changes found.`);
                 callback();
@@ -59,7 +64,6 @@ defineSupportCode(function({ Given, Then, When, setDefaultTimeout }) {
                 console.log(`Changes found.`);
             }
         );
-
 
     });
 
