@@ -1,0 +1,15 @@
+{
+    "name": "k6_bavv_libreinversion_avvillas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": ""
+    },
+    "author": "Brayan Martinez",
+    "license": "ISC",
+    "dependencies": {
+        "shelljs": "^0.8.4",
+        "yargs": "^17.0.1"
+    }
+}
